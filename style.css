@@ -1,8 +1,35 @@
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+}
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark section {
+    background: #1e1e1e;
+}
+
+body.dark header {
+    background: black;
 }
 
 header {
@@ -14,9 +41,29 @@ header {
 
 section {
     padding: 20px;
-    margin: 10px;
+    margin: 15px auto;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: bold;
 }
 
 .easter-egg{
