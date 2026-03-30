@@ -21,9 +21,9 @@ section {
 
 .easter-egg{
   position:fixed;
-  bottom:6px;
-  right:2px;
-  font-size:10px;
+  bottom:10px;
+  right:4px;
+  font-size:16px;
   color:#22d3ee;
   cursor:pointer;
 }
@@ -31,11 +31,11 @@ section {
 .easter-egg span{
   opacity:0;
   margin-left:6px;
-  transition:0.1s;
-  font-size:4px;
+  transition:0.5s;
+  font-size:16px;
   color:#94a3b8;
 }
 
 .easter-egg:hover span{
-  opacity:1;
+  opacity:2;
 }
